@@ -16,7 +16,6 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cy.get('#confirm-password').type('Teste@123')
         cy.get('#terms-agreement').check()
         cy.get('#register-btn').click()
-        //Resultado esperado
         cy.url().should('include', 'dashboard')
 
     });
@@ -31,7 +30,6 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cy.get('#confirm-password').type('Teste@123')
         cy.get('#terms-agreement').check()
         cy.get('#register-btn').click()
-        //Resultado esperado
         cy.url().should('include', 'dashboard')
         cy.get('#user-name').should('contain', nome)
 
