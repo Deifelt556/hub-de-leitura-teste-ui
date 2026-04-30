@@ -20,6 +20,7 @@ describe('Funcionalidade: Contato', () => {
     cy.get('[name="subject"]').select("Parcerias")
     cy.get('[name="message"]').type('Mensagem de teste')
     cy.get('#btn-submit').click()
+    //Resultado esperado
     cy.get('#alert-container').should('contain', 'Por favor, preencha o campo Nome.')
   });
 
@@ -29,6 +30,7 @@ describe('Funcionalidade: Contato', () => {
     cy.get('[name="subject"]').select("Parcerias")
     cy.get('[name="message"]').type('Mensagem de teste')
     cy.get('#btn-submit').click()
+    //Resultado esperado
     cy.get('#alert-container').should('contain', 'Por favor, preencha o campo E-mail.')
   });
 
