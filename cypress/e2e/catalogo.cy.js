@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('Funcinalidade: Catálogo de livros', () => {
+describe('Funcionalidade: Catálogo de livros', () => {
 
     beforeEach(() => {
         cy.visit('catalog.html')
