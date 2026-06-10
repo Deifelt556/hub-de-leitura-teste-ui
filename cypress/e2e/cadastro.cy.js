@@ -20,7 +20,7 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
 
     });
 
-    it.only('Deve fazer cadastro com sucesso usando Faker', () => {
+    it('Deve fazer cadastro com sucesso usando Faker', () => {
         let email = faker.internet.email()
         let nome = faker.person.fullName()
         cy.get('#name').type(nome)
@@ -33,5 +33,12 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cy.url().should('include', 'dashboard')
         cy.get('#user-name').should('contain', nome)
 
+    });
+
+    it('Deve preencher cadastro com sucesso - Usando comando customizado', () => {
+        let email = `teste${Date.now()}@teste.com`
+        let nome = faker.person.fullName ({ sex: 'male' })
+        cy.preencherCadastro(nome, email, '912345678', 'Teste@123', 'Teste@123')
+        cy.url().should('include', 'dashboard')
     });
 });
