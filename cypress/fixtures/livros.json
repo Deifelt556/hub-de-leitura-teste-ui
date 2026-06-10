@@ -1,7 +1,7 @@
 [
     {
         "livro": "1984",
-        "categoria": "ficção"
+        "categoria": "Ficção"
     },
     {
         "livro": "Dom Quixote",
@@ -10,5 +10,25 @@
     {
         "livro": "O Hobbit",
         "categoria": "Aventura"
+    },
+    {
+        "livro": "A Metamorfose",
+        "categoria": "Ficção"
+    },
+    {
+        "livro": "O Apanhador no Campo de Centeio",
+        "categoria": "ficção"
+    },
+    {
+        "livro": "O Pequeno Príncipe",
+        "categoria": "Infantil"
+    },
+    {
+        "livro": "O Morro dos Ventos Uivantes",
+        "categoria": "Romance"
+    },
+    {
+        "livro": "O Diário de Anne Frank",
+        "categoria": "Biografia"
     }
 ]
