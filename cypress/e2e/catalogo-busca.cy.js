@@ -25,7 +25,7 @@ describe('Funcionalidade: Busca no catálogo', () => {
         })
     });
 
-    it.only('Deve validar todos os livros da lista', () => {
+    it('Deve validar todos os livros da lista', () => {
         cy.fixture('livros').then((cat) =>{
             cat.forEach(item => {
                 cy.get('#search-input').clear().type(item.livro)
